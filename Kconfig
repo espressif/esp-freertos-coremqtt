@@ -1,0 +1,29 @@
+menu "FreeRTOS coreMQTT"
+    
+    config MQTT_STATE_ARRAY_MAX_COUNT
+        int "Determines the maximum number of MQTT PUBLISH messages, pending acknowledgement at a time"
+        range 1 16
+        default 10
+        help
+            Determines the maximum number of MQTT PUBLISH messages, pending
+            acknowledgement at a time, that are supported for incoming and outgoing
+            direction of messages, separately.
+    
+    config MQTT_MAX_CONNACK_RECEIVE_RETRY_COUNT
+        int "Retry count for reading CONNACK from network"
+        range 1 16
+        default 2
+        help
+            It will be used only when the timeoutMs parameter of MQTT_Connect() is passed as 0 . 
+            The transport receive for CONNACK will be retried MQTT_MAX_CONNACK_RECEIVE_RETRY_COUNT
+            times before timing out. A value of 0 for this config will cause the transport receive 
+            for CONNACK to be invoked only once.
+    
+    config MQTT_PINGRESP_TIMEOUT_MS
+        int "Number of milliseconds to wait for a ping response to a ping request as part of the keep-alive mechanism."
+        default 500
+        help
+            If a ping response is not received before this timeout, then MQTT_ProcessLoop will 
+            return MQTTKeepAliveTimeout.
+
+endmenu
