@@ -192,7 +192,7 @@
 /**
  * @brief Transport timeout in milliseconds for transport send and receive.
  */
-#define mqttexampleTRANSPORT_SEND_RECV_TIMEOUT_MS         ( 200U )
+#define mqttexampleTRANSPORT_SEND_RECV_TIMEOUT_MS         ( 20000U )
 
 /**
  * @brief ALPN (Application-Layer Protocol Negotiation) protocol name for AWS IoT MQTT.
