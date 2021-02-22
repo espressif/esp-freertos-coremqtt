@@ -11,12 +11,24 @@ It uses FreeRTOS coreMQTT library which implements mqtt client to connect to mqt
 
 ### Hardware Required
 
-This example can be executed on any ESP32 board, the only required interface is WiFi and connection to internet.
+This example can be executed on any ESP board, the only required interface is WiFi and connection to internet.
+
+### Set the target chip
+
+```
+idf.py set-target esp32 # For ESP32
+```
+or
+
+```
+idf.py set-target esp32c3 # For ESP32-C3
+```
 
 ### Configure the project
 
 * Open the project configuration menu (`idf.py menuconfig`)
 * Configure Wi-Fi or Ethernet under "Example Connection Configuration" menu. See "Establishing Wi-Fi or Ethernet Connection" section in [examples/protocols/README.md](../../README.md) for more details.
+* Configure MQTT client identifier, broker endpoint and port under "Example Configuration" menu.
 * When using Make build system, set `Default serial port` under `Serial flasher config`.
 
 * Generate your client keys and certificate
@@ -36,7 +48,9 @@ openssl req -out client.csr -key client.key -new
 
 Paste the generated CSR in the [Mosquitto test certificate signer](https://test.mosquitto.org/ssl/index.php), click Submit and copy the downloaded `client.crt` in the `main` directory.
 
-Please note, that the supplied files `client.crt` and `client.key` in the `main` directory are only placeholders for your client certificate and key (i.e. the example "as is" would compile but would not connect to the broker)
+Please paste the contents of your root certificate auth in PEM format in the `root_cert_auth.pem` file.
+
+Please note, that the supplied files `client.crt`, `client.key` and `root_cert_auth.pem` in the `main` directory are only placeholders for your client certificate, key and root certificate (i.e. the example "as is" would compile but would not connect to the broker)
 
 ### Build and Flash
 
