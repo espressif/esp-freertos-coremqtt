@@ -29,13 +29,13 @@ ESP32-C3-DevKitM-1 is an entry-level development board based on [ESP32-C3-MINI-1
 
 Most of the I/O pins on the ESP32-C3-MINI-1 module are broken out to the pin headers on both sides of this board for easy interfacing. Developers can either connect peripherals with jumper wires or mount ESP32-C3-DevKitM-1 on a breadboard.
 
-![ESP32-C3-DevKitM-1](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/\_images/esp32-c3-devkitm-1-v1-isometric.png "ESP32-C3-DevKitM-1")
+![ESP32-C3-DevKitM-1](../../../doc/_static/esp32-c3-devkitm-1-v1-isometric.png "ESP32-C3-DevKitM-1")
 
 Refer to the Product Overview section in the [product data sheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf). 
 
 # 3. Hardware Description
 ## 3.1 DataSheet
-The product data sheet is available [here](https://apn-portal.my.salesforce.com/servlet/servlet.ExternalRedirect?url=https%3A%2F%2Fwww.espressif.com%2Fsites%2Fdefault%2Ffiles%2Fdocumentation%2Fesp32-c3_datasheet_en.pdf).
+The product data sheet is available [here](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf).
 ## 3.2 Standard Kit Contents
 Refer to the section Contents and Packaging in the [User Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html)
 ## 3.3 User Provided items
@@ -60,8 +60,7 @@ You have a choice to either download and install the following software manually
 - [Eclipse Plugin](https://github.com/espressif/idf-eclipse-plugin) ([installation link](https://github.com/espressif/idf-eclipse-plugin#installing-idf-plugin-using-update-site-url))
 - [VS Code Extension](https://github.com/espressif/vscode-esp-idf-extension) ([onboarding](https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/ONBOARDING.md))
 
-![Development of applications for ESP32-C3](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/\_images/what-you-need.png "Development of applications for ESP32-C3")	
-
+![Development of applications for ESP32-C3](../../../doc/_static/what-you-need.png "Development of applications for ESP32-C3")	
 
 For further instructions, refer to [Step-by-step installation.](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/get-started/index.html#installation-step-by-step)
 
