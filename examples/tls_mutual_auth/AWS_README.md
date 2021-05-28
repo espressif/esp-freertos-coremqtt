@@ -1,4 +1,4 @@
-# ESP32-C3-DevKitM-1 Getting Started Guide for AWS IoT Core
+# Getting Started Guide for AWS IoT Core
 
 ## Table of Contents
 
