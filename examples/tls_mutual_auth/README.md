@@ -172,3 +172,16 @@ Incoming Publish Message : Hello World!
 [INFO] [MQTTDemo] [prvMQTTDemoTask:561] Short delay before starting the next iteration.... 
 ```
 
+## Size Information on ESP-IDF v4.3
+
+```
+Total sizes:
+ DRAM .data size:   16040 bytes
+ DRAM .bss  size:   19416 bytes
+Used static DRAM:       0 bytes (      0 available, nan% used)
+Used static IRAM:       0 bytes (      0 available, nan% used)
+Used stat D/IRAM:  118395 bytes ( 258437 available, 31.4% used)
+      Flash code:  553107 bytes
+    Flash rodata:  121148 bytes
+Total image size:~ 773234 bytes (.bin may be padded larger)
+```
