@@ -2,7 +2,9 @@
 
 (See the README.md file in the upper level 'examples' directory for more information about examples.)
 
-For connecting to AWS IoT using this example, follow the [AWS README](AWS_README.md) instead.
+For connecting to AWS IoT using this example, follow the README for your chip instead.
+[ESP32-C3](aws-readme/esp32-c3.md)
+[ESP32-S2](aws-readme/esp32-s2.md)
 
 This guide is for using the example to connect to the broker test.mosquitto.org using ssl transport with client certificate and as a demonstration subscribes/unsubscribes and send a message on certain topic.
 (Please note that the public broker is maintained by the community so may not be always available, for details please visit http://test.mosquitto.org)
@@ -18,12 +20,8 @@ This example can be executed on any ESP board, the only required interface is Wi
 ### Set the target chip
 
 ```
-idf.py set-target esp32 # For ESP32
-```
-or
-
-```
-idf.py set-target esp32c3 # For ESP32-C3
+idf.py set-target <target>
+# choose between esp32|esp32s2|esp32c3|esp32s3|linux
 ```
 
 ### Configure the project
