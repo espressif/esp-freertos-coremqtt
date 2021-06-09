@@ -21,13 +21,19 @@ None
 ## 1.2 Glossary
 None
 ## 1.3 Revision History (Version, Date, Description of change)
-0.125-Feb-2021Initial Draft
+0.1 25-Feb-2021 Initial Draft
 # 2. Overview
-This user guide will help you get started with ESP32-C3 and AWS IoT.
-ESP32-C3-DevKitM-1 is an entry-level development board based on [ESP32-C3-MINI-1](https://www.espressif.com/en/products/modules), a module named for its small size. This board integrates complete Wi-Fi and Bluetooth LE functions.
-Most of the I/O pins on the ESP32-C3-MINI-1 module are broken out to the pin headers on both sides of this board for easy interfacing. Developers can either connect peripherals with jumper wires or mount ESP32-C3-DevKitM-1 on a breadboard.
+ESP32-C3 is a single-core, 32-bit, RISC-V-based MCU with 400KB of SRAM, which is capable of running at 160MHz. It has integrated 2.4 GHz Wi-Fi and Bluetooth 5 (LE) with a long-range support. It has 22 programmable GPIOs with support for ADC, SPI, UART, I2C, I2S, RMT, TWAI, and PWM.  
 
-![ESP32-C3-DevKitM-1](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/_images/esp32-c3-devkitm-1-v1-isometric.png)
+This user guide will help you get started with ESP32-C3 DevKit and AWS IoT.
+
+ESP32-C3-DevKitM-1         |  ESP32-C3-DevKitC-02
+:-------------------------:|:-------------------------:
+![](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/_images/esp32-c3-devkitm-1-v1-isometric.png)  |  ![](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/_images/esp32-c3-devkitc-02-v1-isometric.png)
+
+This guide works for the ESP32-C3 DevKits: ESP32-C3-DevKitM-1 and ESP32-C3-DevKitC-02.  
+The ESP32-C3-DevKitM-1 DevKit supports following modules: ESP32-C3-MINI-1  
+The ESP32-C3-DevKitC-02 DevKit supports following modules: ESP32-C3-WROOM-02
 
 Refer to the Product Overview section in the [product data sheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf). 
 

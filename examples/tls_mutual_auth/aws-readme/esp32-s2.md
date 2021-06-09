@@ -23,10 +23,17 @@ None
 ## 1.3 Revision History (Version, Date, Description of change)
 0.1	25-Feb-2021	Initial Draft
 # 2. Overview
-This user guide will help you get started with ESP32-S2 and AWS IoT.	
-ESP32-S2 is a truly secure, highly integrated, low-power, 2.4 GHz Wi-Fi Microcontroller SoC supporting Wi-Fi HT40 and having 43 GPIOs. Based on an Xtensa® single-core 32-bit LX7 processor, it can be clocked at up to 240 MHz.
+ESP32-S2 is a truly secure, highly integrated, low-power, 2.4 GHz Wi-Fi Microcontroller SoC supporting Wi-Fi HT40 and having 43 GPIOs. Based on an Xtensa® single-core 32-bit LX7 processor, it can be clocked at up to 240 MHz.  
 
-![ESP32-S2-Saola-1](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/_images/esp32-s2-saola-1-v1.2-isometric.png)
+This user guide will help you get started with ESP32-S2 DevKit and AWS IoT.  
+
+ESP32-S2-Saola-1           |  ESP32-S2-DevKitM-1
+:-------------------------:|:-------------------------:
+![](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/_images/esp32-s2-saola-1-v1.2-isometric.png)  |  ![](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/_images/esp32-s2-devkitm-1-v1-isometric.png)
+
+This guide works for the ESP32-S2 DevKits: ESP32-S2-Saola-1 and ESP32-S2-DevKitM-1.  
+The ESP32-S2-Saola-1 DevKit supports following modules: ESP32-S2-WROOM, ESP32-S2-WROOM-I, ESP32-S2-WROVER, ESP32-S2-WROVER-I  
+The ESP32-S2-DevKitM-1 DevKit supports following modules: ESP32-S2-MINI-1, ESP32-S2-MINI-1U  
 
 Refer to the Product Overview section in the [product data sheet](https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf).
 
@@ -75,7 +82,7 @@ None.
 
 [Description of Components](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-saola-1-v1.2.html#description-of-components)
 
-Please refer to above links for the hardware setup. ESP32-S2-Saola-1 requires only a USB connection to the development host computer. The same USB connection is used for supplying the power, programming the board and getting serial console access.
+Please refer to above links for the hardware setup. The ESP32-S2 DevKit requires only a USB connection to the development host computer. The same USB connection is used for supplying the power, programming the board and getting serial console access.
 
 The Red power LED will glow indicating the power supply to the development board.
 
